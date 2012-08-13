@@ -1,0 +1,3 @@
+[submodule "Submodules/MKNetworkKit"]
+	path = Submodules/MKNetworkKit
+	url = git://github.com/MugunthKumar/MKNetworkKit.git
