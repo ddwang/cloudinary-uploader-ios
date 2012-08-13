@@ -7,6 +7,11 @@
 //
 
 #import "NAViewController.h"
+#import "NACloudinaryNetworkEngine.h"
+
+#define CLOUDINARY_CLOUD_NAME @"YOUR_CLOUD_NAME"
+#define CLOUDINARY_API_KEY @"YOU_API_KEY"
+#define CLOUDINARY_API_SECRET @"YOUR_API_SECRET"
 
 @interface NAViewController ()
 
@@ -14,21 +19,38 @@
 
 @implementation NAViewController
 
+@synthesize imageView = _imageView;
+@synthesize textView = _textView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
+    [self setImageView:nil];
+    [self setTextView:nil];
+	
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (IBAction)doUpload:(id) sender
 {
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+	NACloudinaryNetworkEngine* cloudinary =
+	[[NACloudinaryNetworkEngine alloc] initCloud:CLOUDINARY_CLOUD_NAME
+									  withApiKey:CLOUDINARY_API_KEY
+									andApiSecret:CLOUDINARY_API_SECRET];
+	
+	[cloudinary imageUpload:_imageView.image
+			   onCompletion:^(MKNetworkOperation* completedOperation)
+	 {
+		 _textView.text = completedOperation.responseString;
+	 }
+					onError:^(NSError* error)
+	 {
+		 NSLog(@"Error: %@", error.description);
+	 }];
 }
 
 @end

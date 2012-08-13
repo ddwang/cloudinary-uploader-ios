@@ -27,6 +27,8 @@
 		E72ED2C015D8DBA70057590F /* NAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72ED2BE15D8DBA70057590F /* NAViewController.xib */; };
 		E72ED2C115D8DC510057590F /* NAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2B315D8DB340057590F /* NAAppDelegate.m */; };
 		E72ED2C215D8DC510057590F /* NAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2B515D8DB340057590F /* NAViewController.m */; };
+		E72ED2CD15D8E59D0057590F /* lolcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E72ED2CC15D8E59D0057590F /* lolcat.jpg */; };
+		E72ED2D115D8EC1E0057590F /* NACloudinaryNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2D015D8EC1E0057590F /* NACloudinaryNetworkEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,9 @@
 		E72ED2B815D8DB800057590F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "cloudinary-tester/main.m"; sourceTree = SOURCE_ROOT; };
 		E72ED2BC15D8DB9A0057590F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "cloudinary-tester/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
 		E72ED2BF15D8DBA70057590F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "cloudinary-tester/en.lproj/NAViewController.xib"; sourceTree = SOURCE_ROOT; };
+		E72ED2CC15D8E59D0057590F /* lolcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lolcat.jpg; path = "cloudinary-tester/lolcat.jpg"; sourceTree = SOURCE_ROOT; };
+		E72ED2CF15D8EC1E0057590F /* NACloudinaryNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NACloudinaryNetworkEngine.h; sourceTree = "<group>"; };
+		E72ED2D015D8EC1E0057590F /* NACloudinaryNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NACloudinaryNetworkEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 		E72ED25C15D8D7AC0057590F = {
 			isa = PBXGroup;
 			children = (
+				E72ED2CE15D8EC1E0057590F /* cloudinary-uploader-ios */,
 				E72ED27115D8D7AC0057590F /* cloudinary-tester */,
 				E72ED29315D8D9870057590F /* MKNetworkKit */,
 				E72ED26A15D8D7AC0057590F /* Frameworks */,
@@ -116,6 +122,7 @@
 		E72ED27115D8D7AC0057590F /* cloudinary-tester */ = {
 			isa = PBXGroup;
 			children = (
+				E72ED2CC15D8E59D0057590F /* lolcat.jpg */,
 				E72ED2B215D8DB340057590F /* NAAppDelegate.h */,
 				E72ED2B315D8DB340057590F /* NAAppDelegate.m */,
 				E72ED2B415D8DB340057590F /* NAViewController.h */,
@@ -179,6 +186,15 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		E72ED2CE15D8EC1E0057590F /* cloudinary-uploader-ios */ = {
+			isa = PBXGroup;
+			children = (
+				E72ED2CF15D8EC1E0057590F /* NACloudinaryNetworkEngine.h */,
+				E72ED2D015D8EC1E0057590F /* NACloudinaryNetworkEngine.m */,
+			);
+			path = "cloudinary-uploader-ios";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +250,7 @@
 				E72ED2BA15D8DB8E0057590F /* cloudinary-tester-Info.plist in Resources */,
 				E72ED2BD15D8DB9A0057590F /* InfoPlist.strings in Resources */,
 				E72ED2C015D8DBA70057590F /* NAViewController.xib in Resources */,
+				E72ED2CD15D8E59D0057590F /* lolcat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +272,7 @@
 				E72ED2B015D8D9870057590F /* MKNetworkOperation.m in Sources */,
 				E72ED2B115D8D9870057590F /* Reachability.m in Sources */,
 				E72ED2B915D8DB800057590F /* main.m in Sources */,
+				E72ED2D115D8EC1E0057590F /* NACloudinaryNetworkEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +353,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cloudinary-tester/cloudinary-tester-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/cloudinary-tester/cloudinary-tester-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "cloudinary-tester";
 				WRAPPER_EXTENSION = app;
 			};
@@ -346,6 +368,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cloudinary-tester/cloudinary-tester-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/cloudinary-tester/cloudinary-tester-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "cloudinary-tester";
 				WRAPPER_EXTENSION = app;
 			};
