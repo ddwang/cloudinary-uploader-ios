@@ -10,11 +10,6 @@
 		E72ED26C15D8D7AC0057590F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72ED26B15D8D7AC0057590F /* UIKit.framework */; };
 		E72ED26E15D8D7AC0057590F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72ED26D15D8D7AC0057590F /* Foundation.framework */; };
 		E72ED27015D8D7AC0057590F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72ED26F15D8D7AC0057590F /* CoreGraphics.framework */; };
-		E72ED27615D8D7AC0057590F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E72ED27415D8D7AC0057590F /* InfoPlist.strings */; };
-		E72ED27815D8D7AC0057590F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED27715D8D7AC0057590F /* main.m */; };
-		E72ED27C15D8D7AC0057590F /* NAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED27B15D8D7AC0057590F /* NAAppDelegate.m */; };
-		E72ED27F15D8D7AC0057590F /* NAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED27E15D8D7AC0057590F /* NAViewController.m */; };
-		E72ED28215D8D7AC0057590F /* NAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72ED28015D8D7AC0057590F /* NAViewController.xib */; };
 		E72ED28D15D8D9500057590F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72ED28C15D8D9500057590F /* CFNetwork.framework */; };
 		E72ED29015D8D95C0057590F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72ED28F15D8D95C0057590F /* SystemConfiguration.framework */; };
 		E72ED29215D8D9680057590F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72ED29115D8D9680057590F /* Security.framework */; };
@@ -26,6 +21,12 @@
 		E72ED2AF15D8D9870057590F /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2A215D8D9870057590F /* MKNetworkEngine.m */; };
 		E72ED2B015D8D9870057590F /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2A515D8D9870057590F /* MKNetworkOperation.m */; };
 		E72ED2B115D8D9870057590F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2A815D8D9870057590F /* Reachability.m */; };
+		E72ED2B915D8DB800057590F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2B815D8DB800057590F /* main.m */; };
+		E72ED2BA15D8DB8E0057590F /* cloudinary-tester-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E72ED2B615D8DB700057590F /* cloudinary-tester-Info.plist */; };
+		E72ED2BD15D8DB9A0057590F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E72ED2BB15D8DB9A0057590F /* InfoPlist.strings */; };
+		E72ED2C015D8DBA70057590F /* NAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72ED2BE15D8DBA70057590F /* NAViewController.xib */; };
+		E72ED2C115D8DC510057590F /* NAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2B315D8DB340057590F /* NAAppDelegate.m */; };
+		E72ED2C215D8DC510057590F /* NAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72ED2B515D8DB340057590F /* NAViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,15 +34,6 @@
 		E72ED26B15D8D7AC0057590F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E72ED26D15D8D7AC0057590F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E72ED26F15D8D7AC0057590F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E72ED27315D8D7AC0057590F /* cloudinary-tester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudinary-tester-Info.plist"; sourceTree = "<group>"; };
-		E72ED27515D8D7AC0057590F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E72ED27715D8D7AC0057590F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E72ED27915D8D7AC0057590F /* cloudinary-tester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudinary-tester-Prefix.pch"; sourceTree = "<group>"; };
-		E72ED27A15D8D7AC0057590F /* NAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAAppDelegate.h; sourceTree = "<group>"; };
-		E72ED27B15D8D7AC0057590F /* NAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAAppDelegate.m; sourceTree = "<group>"; };
-		E72ED27D15D8D7AC0057590F /* NAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAViewController.h; sourceTree = "<group>"; };
-		E72ED27E15D8D7AC0057590F /* NAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAViewController.m; sourceTree = "<group>"; };
-		E72ED28115D8D7AC0057590F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NAViewController.xib; sourceTree = "<group>"; };
 		E72ED28C15D8D9500057590F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		E72ED28F15D8D95C0057590F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E72ED29115D8D9680057590F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -62,6 +54,15 @@
 		E72ED2A515D8D9870057590F /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
 		E72ED2A715D8D9870057590F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E72ED2A815D8D9870057590F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E72ED2B215D8DB340057590F /* NAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAAppDelegate.h; path = "cloudinary-tester/NAAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		E72ED2B315D8DB340057590F /* NAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NAAppDelegate.m; path = "cloudinary-tester/NAAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		E72ED2B415D8DB340057590F /* NAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NAViewController.h; path = "cloudinary-tester/NAViewController.h"; sourceTree = SOURCE_ROOT; };
+		E72ED2B515D8DB340057590F /* NAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NAViewController.m; path = "cloudinary-tester/NAViewController.m"; sourceTree = SOURCE_ROOT; };
+		E72ED2B615D8DB700057590F /* cloudinary-tester-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "cloudinary-tester-Info.plist"; path = "cloudinary-tester/cloudinary-tester-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E72ED2B715D8DB700057590F /* cloudinary-tester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cloudinary-tester-Prefix.pch"; path = "cloudinary-tester/cloudinary-tester-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E72ED2B815D8DB800057590F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "cloudinary-tester/main.m"; sourceTree = SOURCE_ROOT; };
+		E72ED2BC15D8DB9A0057590F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "cloudinary-tester/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		E72ED2BF15D8DBA70057590F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "cloudinary-tester/en.lproj/NAViewController.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,7 @@
 		E72ED25C15D8D7AC0057590F = {
 			isa = PBXGroup;
 			children = (
-				E72ED27115D8D7AC0057590F /* cloudinary-uploader */,
+				E72ED27115D8D7AC0057590F /* cloudinary-tester */,
 				E72ED29315D8D9870057590F /* MKNetworkKit */,
 				E72ED26A15D8D7AC0057590F /* Frameworks */,
 				E72ED26815D8D7AC0057590F /* Products */,
@@ -112,26 +113,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E72ED27115D8D7AC0057590F /* cloudinary-uploader */ = {
+		E72ED27115D8D7AC0057590F /* cloudinary-tester */ = {
 			isa = PBXGroup;
 			children = (
-				E72ED27A15D8D7AC0057590F /* NAAppDelegate.h */,
-				E72ED27B15D8D7AC0057590F /* NAAppDelegate.m */,
-				E72ED27D15D8D7AC0057590F /* NAViewController.h */,
-				E72ED27E15D8D7AC0057590F /* NAViewController.m */,
-				E72ED28015D8D7AC0057590F /* NAViewController.xib */,
+				E72ED2B215D8DB340057590F /* NAAppDelegate.h */,
+				E72ED2B315D8DB340057590F /* NAAppDelegate.m */,
+				E72ED2B415D8DB340057590F /* NAViewController.h */,
+				E72ED2B515D8DB340057590F /* NAViewController.m */,
+				E72ED2BE15D8DBA70057590F /* NAViewController.xib */,
 				E72ED27215D8D7AC0057590F /* Supporting Files */,
 			);
+			name = "cloudinary-tester";
 			path = "cloudinary-uploader";
 			sourceTree = "<group>";
 		};
 		E72ED27215D8D7AC0057590F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E72ED27315D8D7AC0057590F /* cloudinary-tester-Info.plist */,
-				E72ED27415D8D7AC0057590F /* InfoPlist.strings */,
-				E72ED27715D8D7AC0057590F /* main.m */,
-				E72ED27915D8D7AC0057590F /* cloudinary-tester-Prefix.pch */,
+				E72ED2B615D8DB700057590F /* cloudinary-tester-Info.plist */,
+				E72ED2BB15D8DB9A0057590F /* InfoPlist.strings */,
+				E72ED2B815D8DB800057590F /* main.m */,
+				E72ED2B715D8DB700057590F /* cloudinary-tester-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,8 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72ED27615D8D7AC0057590F /* InfoPlist.strings in Resources */,
-				E72ED28215D8D7AC0057590F /* NAViewController.xib in Resources */,
+				E72ED2BA15D8DB8E0057590F /* cloudinary-tester-Info.plist in Resources */,
+				E72ED2BD15D8DB9A0057590F /* InfoPlist.strings in Resources */,
+				E72ED2C015D8DBA70057590F /* NAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72ED27815D8D7AC0057590F /* main.m in Sources */,
-				E72ED27C15D8D7AC0057590F /* NAAppDelegate.m in Sources */,
-				E72ED27F15D8D7AC0057590F /* NAViewController.m in Sources */,
+				E72ED2C115D8DC510057590F /* NAAppDelegate.m in Sources */,
+				E72ED2C215D8DC510057590F /* NAViewController.m in Sources */,
 				E72ED2AA15D8D9870057590F /* NSData+Base64.m in Sources */,
 				E72ED2AB15D8D9870057590F /* NSDate+RFC1123.m in Sources */,
 				E72ED2AC15D8D9870057590F /* NSDictionary+RequestEncoding.m in Sources */,
@@ -252,24 +254,25 @@
 				E72ED2AF15D8D9870057590F /* MKNetworkEngine.m in Sources */,
 				E72ED2B015D8D9870057590F /* MKNetworkOperation.m in Sources */,
 				E72ED2B115D8D9870057590F /* Reachability.m in Sources */,
+				E72ED2B915D8DB800057590F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E72ED27415D8D7AC0057590F /* InfoPlist.strings */ = {
+		E72ED2BB15D8DB9A0057590F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E72ED27515D8D7AC0057590F /* en */,
+				E72ED2BC15D8DB9A0057590F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E72ED28015D8D7AC0057590F /* NAViewController.xib */ = {
+		E72ED2BE15D8DBA70057590F /* NAViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E72ED28115D8D7AC0057590F /* en */,
+				E72ED2BF15D8DBA70057590F /* en */,
 			);
 			name = NAViewController.xib;
 			sourceTree = "<group>";
@@ -330,8 +333,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudinary-uploader/cloudinary-tester-Prefix.pch";
-				INFOPLIST_FILE = "cloudinary-uploader/cloudinary-tester-Info.plist";
+				GCC_PREFIX_HEADER = "cloudinary-tester/cloudinary-tester-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/cloudinary-tester/cloudinary-tester-Info.plist";
 				PRODUCT_NAME = "cloudinary-tester";
 				WRAPPER_EXTENSION = app;
 			};
@@ -341,8 +344,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudinary-uploader/cloudinary-tester-Prefix.pch";
-				INFOPLIST_FILE = "cloudinary-uploader/cloudinary-tester-Info.plist";
+				GCC_PREFIX_HEADER = "cloudinary-tester/cloudinary-tester-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/cloudinary-tester/cloudinary-tester-Info.plist";
 				PRODUCT_NAME = "cloudinary-tester";
 				WRAPPER_EXTENSION = app;
 			};
